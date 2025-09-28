@@ -2,6 +2,8 @@ extends State
 
 class_name IdleState
 
+func _ready():
+	animation.play("Idle")
 
 func move_left():
 	change_state.call_func("run")
@@ -14,4 +16,4 @@ func move_up():
 	
 func move_down():
 	change_state.call_func("run")
-					
+	
